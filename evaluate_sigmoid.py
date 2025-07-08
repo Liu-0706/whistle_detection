@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score, classification_report
 
 def evaluate_sig(model_path):
     model = tf.keras.models.load_model(model_path, compile=False)
+<<<<<<< HEAD
 
     x_test = np.load('D:\\Desk\\whistle_detection\\data\\WhistleDetection\\whistle_x_base_test.npy')
     y_test = np.load('D:\\Desk\\whistle_detection\\data\\WhistleDetection\\whistle_y_base_test.npy')
@@ -74,6 +75,8 @@ from sklearn.metrics import accuracy_score, classification_report
 
 def evaluate_sig(model_path):
     model = tf.keras.models.load_model(model_path, compile=False)
+=======
+>>>>>>> b0216cf6b06aa0baadb47cc70d2e87f901352cab
     X_test = np.load('D:\\Desk\\whistle_detection\\data\\WhistleDetection\\whistle_x_base_test.npy')
     y_test = np.load('D:\\Desk\\whistle_detection\\data\\WhistleDetection\\whistle_y_base_test.npy')
 
@@ -115,6 +118,10 @@ def evaluate_sig(model_path):
     print(f"\nAccuracy: {accuracy:.4f}\n")
     print(classification_report(y_test, pred_labels))
 
+<<<<<<< HEAD
 #evaluate_sig("D:\\Desk\\whistle_detection\\model\\sigmoid\\whistle_model.h5")
 
 """
+=======
+evaluate_sig("D:\\Desk\\whistle_detection\\model\\sigmoid\\whistle_model.h5")
+>>>>>>> b0216cf6b06aa0baadb47cc70d2e87f901352cab
